@@ -13,10 +13,36 @@ body {
 }
 
 .container_clock {
+    position: relative;
     width: 300px;
     height: 300px;
     border-radius: 50%;
     background-image: url(img/f936c5a35c35c3f4d7c498fb8edad0f1.png);
     background-size: cover;
-    background-position: center;
+}
+
+.needle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    border-radius: 3px;
+}
+
+.hr {
+    width: 4px;
+    height: 20%;
+    background-color: black;
+}
+
+.min {
+    width: 2px;
+    height: 40%;
+    background-color: black;
+}
+
+.sec {
+    width: 3px;
+    height: 45%;
+    background-color: #900C3F;
 }
